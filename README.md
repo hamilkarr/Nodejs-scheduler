@@ -15,10 +15,10 @@
 - **MySQL 8.0**
 - Visual Studio Code
 
-### 주요 기능
-  - node.js
-    - sequelize : DB와의 연동.  <br>
-      models\scheduler.js <br>
+### 주요 스킬
+  ### node.js
+  - sequelize : DB와의 연동.  <br>
+    models\scheduler.js <br>
     
 ```js
 delete : async function (period, color) {
@@ -41,16 +41,44 @@ delete : async function (period, color) {
 	},
 ```
 
-  - nunjucks : html에서 반복,조건, 제어문 등을 사용해 코드의 간결함과 효율성을 높임. <br>
-    views\ _main.html 
+   - nunjucks : html에서 반복,조건, 제어문 등을 사용해 코드의 간결함과 효율성을 높임. <br>
+     views\today.html
 
 ```html
-	<ul class='yoils'>
-	{% for yoil in yoilsEn %}
-		<li>{{ yoil }}</li>
+	<div class='today_list'>
+	<div class='tit'>오늘 할일</div>
+	{% if list %}
+	<ul>
+	{% for item in list %}
+		<li>
+			<input type='checkbox' name='isChecked' value='{{ item.color }}' id='isChecked{{ loop.index }}'>
+			<label for='isChecked{{ loop.index }}'>{{ item.title }}</label>
+		</li>
 	{% endfor %}
 	</ul>
+	{% endif %}
+	<div class='confirm'>스케줄 확인</div>
+	</div>
 ```
+
+   ### Javascript
+   - jQuery : 'write less, do more.' <br>
+     public\js\layer.js
+```js
+	if ($("#layer_dim").length == 0) {
+			$("body").append("<div id='layer_dim'></div>");
+		}
+		
+		if ($("#layer_popup").length == 0) {
+			$("body").append("<div id='layer_popup'></div>");
+		}
+		
+		$layerDim = $("#layer_dim");
+		$popup = $("#layer_popup");
+```
+
+   - Axios : 
+   
 
  
 
