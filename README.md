@@ -5,7 +5,7 @@
 ## 기술 스택
 - **JavaScript (ES2016++)** 
 - **node.js**
-- **MySQL 8.0 **
+- **MySQL 8.0**
 - 라이브러리
   - jQuery
   - Axios
