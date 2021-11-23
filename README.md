@@ -15,5 +15,48 @@
 - **MySQL 8.0**
 - Visual Studio Code
 
+### 주요 기능
+  - node.js
+    - sequelize : DB와의 연동.  <br>
+      models\scheduler.js <br>
+    
+```js
+delete : async function (period, color) {
+		if (!period || !color) 
+			return false;
+		
+		try {
+			const sql = "DELETE FROM schedule WHERE period = ? AND color = ?";
+			await sequelize.query(sql, {
+				replacements : [period, color],
+				type : QueryTypes.DELETE,
+			});
+		
+			return true;
+		} catch (err) {
+			logger(err.message, 'error');
+			logger(err.stack, 'error');
+			return false;
+		}
+	},
+```
+
+  - nunjucks : html에서 반복,조건, 제어문 등을 사용해 코드의 간결함과 효율성을 높임. <br>
+    views\ _main.html 
+
+```html
+	<ul class='yoils'>
+	{% for yoil in yoilsEn %}
+		<li>{{ yoil }}</li>
+	{% endfor %}
+	</ul>
+```
+
+ 
+
+    
+  
+
+
 
 
