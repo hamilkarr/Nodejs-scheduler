@@ -77,14 +77,3 @@ delete : async function (period, color) {
 		$popup = $("#layer_popup");
 ```
 
-   - Axios : 
-   
-
- 
-
-    
-  
-
-
-
-
