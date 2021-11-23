@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "aA!12345",
+    "password": "xxxxxx",
     "database": "scheduler",
     "host": "127.0.0.1",
     "dialect": "mysql"
