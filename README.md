@@ -1,15 +1,19 @@
 # Portfolio Scheduler
 
-일정을 추가,조회,삭제,수정할 수 있는 스케쥴러 입니다.
+일정을 추가,조회,삭제,수정할 수 있는 스케쥴러 입니다. <br><br>
 
-## 기술 스택
+
+<img src="https://user-images.githubusercontent.com/86813319/143006028-163333b0-241a-47bd-a6d3-b72d60012403.png" width="600" height = "310">
+
+실제 구현된 모습을 보고 싶다면 [여기](http://hamilkarr2.cafe24app.com) 를 클릭하세요.
+
+## Used Skill Set and Development Tool
 - **JavaScript (ES2016++)** 
-- **node.js**
-- **MySQL 8.0**
-- 라이브러리
   - jQuery
   - Axios
+- **node.js**
+- **MySQL 8.0**
+- Visual Studio Code
 
-## 자세히
-상세 내용은 `결제 혹은 고용` 이후 볼 수 있습니다. 더보기를 원하신다면 
-[여기](https://hamilkarr1.cafe24app.com) 를 클릭하세요.
+
+
